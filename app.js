@@ -2,12 +2,16 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const userRouter = require('./src/routes/user');
+const requestLogger = require('./src/middlewares/requestLogger');
+
 const connectDB = require('./src/db')
 const path = require('path');
 const app = express();
 
 // Middleware to parse JSON requests
 app.use(express.json());
+app.use(requestLogger);
+
 connectDB();//connect to mongo
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)

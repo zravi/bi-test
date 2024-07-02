@@ -5,6 +5,12 @@
 4 >  http://localhost:PORT/index.html
 5 > fill the form and click on submit
 
+done==>
+mongo db connection
+register user
+request validation
+file upload
+
 
 
 # User Registration API
