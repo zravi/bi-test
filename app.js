@@ -16,10 +16,10 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Use the user router for /register endpoint
+//router endpoint
 app.use('/register', userRouter);
 
-// Start the server
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

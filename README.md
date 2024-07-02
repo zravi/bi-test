@@ -1,3 +1,12 @@
+# Bi-test
+1 > npm i
+2 > update env send mail credentials (ethereal for test)
+3 > npm run dev
+4 >  http://localhost:PORT/index.html
+5 > fill the form and click on submit
+
+
+
 # User Registration API
 
 This API allows users to register by providing their name, email address, password, and profile picture. Upon successful registration, the user's information is stored in a MongoDB database, and a confirmation email is sent to the registered email address.
